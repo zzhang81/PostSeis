@@ -50,3 +50,10 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# dev temp files
+data/
+log/
+
+# dev envs
+.env

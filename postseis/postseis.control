@@ -1,0 +1,6 @@
+# postseis.control
+# auther github.com/zzhang81
+comment = 'PostgreSQL plugin for Seismology'
+default_version = '1.0'
+relocatable = true
+module_pathname = '$libdir/postseis'

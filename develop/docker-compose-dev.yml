@@ -1,0 +1,13 @@
+services:
+  postseis-dev:
+    image: postseis-dev:1.0
+    restart: no
+    shm_size: 128mb
+    volumes:
+      - ./data:/var/lib/postgresql/data
+      - ./log:/var/log/postgresql
+      - ./../postseis:/usr/src/postseis
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: example
