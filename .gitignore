@@ -57,3 +57,4 @@ log/
 
 # dev envs
 .env
+.vscode/
