@@ -8,6 +8,8 @@ RUN apt-get update && \
     postgresql-server-dev-all \
     git \
     vim \
+    procps \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /usr/src

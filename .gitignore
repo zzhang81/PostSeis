@@ -58,3 +58,4 @@ log/
 # dev envs
 .env
 .vscode/
+.idea/

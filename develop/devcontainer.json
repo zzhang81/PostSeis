@@ -1,0 +1,22 @@
+{
+    "name": "PostSeis Database Development",
+    "dockerComposeFile": "docker-compose-dev.yml",
+    "service": "postseis-dev",
+    "workspaceFolder": "/usr/src/postseis",
+    "workspaceMount": "source=../postseis,target=/usr/src/postseis,type=bind,consistency=cached",
+    "shutdownAction": "stopCompose",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash",
+                "C_Cpp.intelliSenseEngine": "Default",
+                "extensions": [
+                    "ms-vscode.cpptools",
+                    "ms-azuretools.vscode-docker",
+                    "ms-vscode.cmake-tools"
+                ]
+            }
+        }
+    },
+    "remoteUser": "root"
+}
